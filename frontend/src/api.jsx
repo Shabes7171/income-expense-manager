@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://income-expense-manager-2.onrender.com';
 
 // Fetch stock data
 export const fetchStock = () => axios.get(`${API_URL}/stock`);
