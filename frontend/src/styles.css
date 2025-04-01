@@ -1,0 +1,191 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f7fc; 
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #2d3e50;
+    font-weight: bold;
+}
+
+/* Input, button, and select styling */
+input, button, select {
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Input focus effect */
+input:focus, select:focus, button:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Form container */
+form {
+    margin-bottom: 30px;
+}
+
+/* Section styling */
+section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Styling for invoice */
+.invoice {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #ffffff;
+    width: 350px;
+    margin-top: 20px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.invoice h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #007bff; /* Blue color for heading */
+}
+
+.invoice-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding: 5px 0;
+}
+
+.invoice-item div {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.invoice-item .item-name, .invoice-item .item-quantity, .invoice-item .item-price {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Hover effect for items */
+.invoice-item:hover {
+    background-color: #f0f8ff;
+    cursor: pointer;
+}
+
+/* Styling for transaction summary */
+.transaction-summary {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e9f7fd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-summary p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Button styling */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .invoice {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .invoice-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .invoice-item div {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    
+    form {
+        margin-top: 20px;
+    }
+}
+
+
+
+/* Styling for invoice */
+.invoice {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #ffffff;
+    width: 350px;
+    margin-top: 20px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.invoice-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.invoice-header img {
+    margin-right: 10px;
+}
+
+.invoice h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #007bff; /* Blue color for heading */
+}
+
+.invoice-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.invoice-item div {
+    margin-right: 10px;
+}
+
+.invoice-item .item-name, .invoice-item .item-quantity, .invoice-item .item-price {
+    font-weight: bold;
+    color: #555;
+}
+
+
+/* frontend/src/styles.css */
+
+/* Styling for the logo in the invoice */
+.invoice-logo {
+    max-width: 100px; /* Limit the size of the logo */
+    height: auto;
+}
